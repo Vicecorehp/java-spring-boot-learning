@@ -13,9 +13,9 @@ public enum Status {
     SERVICE_UNAVAILABLE("503", "服务器当前无法处理请求"),
     ERROR("9999", "数据不能为空");
 
-    private String code;
+    private final String code;
 
-    private String reason;
+    private final String reason;
 
     Status(String code, String reason) {
         this.code = code;

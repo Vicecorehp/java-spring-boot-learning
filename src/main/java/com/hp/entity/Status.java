@@ -1,6 +1,9 @@
 package com.hp.entity;
 
 
+import lombok.Getter;
+
+@Getter
 public enum Status {
 
     OK("200", "正确"),
@@ -20,14 +23,6 @@ public enum Status {
     Status(String code, String reason) {
         this.code = code;
         this.reason = reason;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public String getReason() {
-        return reason;
     }
 
     @Override
